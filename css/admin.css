@@ -23,6 +23,9 @@
 
 .auth-user-block {
 	float: right;
+	padding: 23px 32px;
+    font-size: 18px;
+    font-family: 'Calibri', 'Arial';
 }
 
 /* horisontal-menu styles */
@@ -66,5 +69,56 @@
 /* second-horisontal-menu styles */
 .second-horisontal-menu {
 	height: 80px;
+	font-size: 14px;
 	background: #f1f2f4;
+}
+
+.menu-ul-dark li {
+	color: #474b4b;
+	padding: 10px 60px;
+}
+
+.menu-ul-dark li:hover {
+	color: grey;
+}
+
+.menu-ul-dark .horisontal-menu-ul-li-icon {
+	font-size: 36px;
+}
+
+.exit-link {
+	cursor: pointer;
+}
+
+.exit-link:hover {
+	color: #D84315;
+	transition: 0.3s all;
+}
+
+.exit-link-icon {
+	vertical-align: top;
+}
+
+/* content-styles */
+
+.content {
+	
+}
+
+.content-block {
+	padding: 30px 15px;
+}
+
+.content-item {
+	background: rgba(125, 125, 125, 0.5);
+	height: 460px;
+}
+
+.content-item-small {
+	background: rgba(125, 125, 125, 0.8);
+	height: 320px;
+}
+
+.content-medium-position {
+	padding: 0px 15px;
 }
