@@ -1,0 +1,27 @@
+.auth-box {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+
+.auth-box .auth-user-block, .auth-box .logo-block {
+	float: none;
+	padding: 0px;
+}
+
+.auth-box .logo-block {
+	border-bottom: 1px solid grey;
+	padding: 8px;
+}
+
+.auth-box .auth-user-block {
+	padding: 8px;
+}
+
+.auth-form {
+	margin-top: 10px;
+}

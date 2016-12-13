@@ -30,7 +30,7 @@
 
 /* horisontal-menu styles */
 .horisontal-menu {
-	height: 100px;
+	height: 103px;
 	background: #2e3434;
 	border-bottom: 2px solid grey;
 	color: white;
@@ -56,6 +56,11 @@
 	cursor: pointer;
 	color: #99acb5;
 	transition: 0.3s all;
+	border-right: 1px solid #464848;
+}
+
+.horisontal-menu-ul-li:last-child {
+	border: none;
 }
 
 .horisontal-menu-ul-li:hover {
@@ -76,6 +81,7 @@
 .menu-ul-dark li {
 	color: #474b4b;
 	padding: 10px 60px;
+	border: none;
 }
 
 .menu-ul-dark li:hover {
