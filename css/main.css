@@ -53,3 +53,17 @@ html, body {
 	padding: 40px;
 	background: rgba(125, 125, 125, 0.2);
 }
+
+.material-icons {
+	cursor: pointer;
+}
+
+.edit-icon-btn {
+	color: #01579B;
+	margin: 0px 10px;
+}
+
+.delete-icon-btn {
+	color: #B71C1C;
+	margin: 0px 10px;
+}

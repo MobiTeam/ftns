@@ -25,3 +25,22 @@
 .auth-form {
 	margin-top: 10px;
 }
+
+.register-link-icon {
+	vertical-align: top;
+}
+
+.register-link {
+	cursor: pointer;
+}
+
+.register-link:hover {
+	color: #004D40;
+	transition: 0.3s all;
+}
+
+
+.auth-form .buttons-block {
+	width: 300px;
+	margin: 0 auto;
+}

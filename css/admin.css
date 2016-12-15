@@ -64,7 +64,11 @@
 }
 
 .horisontal-menu-ul-li:hover {
-	color: white;
+	color: #ebeff2;
+}
+
+.horisontal-menu-ul-li.active_item {
+	color: #ebeff2;
 }
 
 .horisontal-menu-ul-li-icon {
