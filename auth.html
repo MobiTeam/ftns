@@ -20,27 +20,69 @@
 					Вход в личный кабинет
 				</div>  
 			</div>
-			<div class="auth-user-block no-select">	
-				Здравствуйте, для входа в систему необходимо ввести логин и пароль
-				<form class="auth-form">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Логин" />
-					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" placeholder="Пароль" />
-					</div>
-					<div class="form-group buttons-block">
-						<div class="exit-link" style="float: left">
-							<i class="material-icons exit-link-icon">&#xE879;</i> Войти
+			<div class="auth-user-block no-select">
+				<div class="auth-block">
+					Здравствуйте, для входа в систему необходимо ввести логин и пароль
+					<form class="auth-form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="login" placeholder="Логин" />
 						</div>
-						<div class="register-link" style="float: right">
-							<i class="material-icons register-link-icon">&#xE7FE;</i> Зарегистрироваться
+						<div class="form-group">
+							<input type="password" class="form-control" name="password" placeholder="Пароль" />
 						</div>
+						<div class="form-group buttons-block">
+							<div class="exit-link" style="float: left">
+								<i class="material-icons exit-link-icon">&#xE879;</i> Войти
+							</div>
+							<div class="register-link" style="float: right">
+								<i class="material-icons register-link-icon">&#xE7FE;</i> Зарегистрироваться
+							</div>
+						</div>
+						<div style="clear:both"></div>
+					</form>				
+				</div>
+				<div class="register-block" style="display: none">
+					Для регистрации в системе введите свой адрес электронной почты
+					<form class="register-form">
+						<div class="form-group">
+							<div class="input-group">
+							  <input type="text" class="form-control" data-helper-class="email-helper" name="email" placeholder="email">
+							  <div class="input-group-btn">
+							    <input type="submit" class="btn btn-success" class="form-control"/>
+							  </div>
+							</div>
+						</div>
+					</form>
+					<div class="email-helper alert alert-info small" style="display: none">
+						На данный адрес придет письмо с дальнейшими инструкциями
 					</div>
-					<div style="clear:both"></div>
-				</form>				
+					<a href="#" class="auth-back-link">
+						<i class="material-icons" style="vertical-align: top;">&#xE5C4;</i>
+						Назад, к форме авторизации
+					</a>					
+				</div>				
 			</div>
 			<div style="clear:both"></div>	
 		</div>		
 	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document)
+				.on('focus', '[data-helper-class]', _onDataHelperFocus)
+				.on('click', '.register-link, .auth-back-link', _toggleAuthFormTabs);
+
+			function _toggleAuthFormTabs(event) {
+				event.preventDefault();
+				$('.auth-block').toggle(0);
+				$('.register-block').toggle(0);
+			}
+
+			function _onDataHelperFocus(event) {
+				var $tg = $(this);
+				$('.' + $tg.attr('data-helper-class')).stop().fadeIn(160);
+			}
+
+		})
+	</script>
 </html>
