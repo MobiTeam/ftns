@@ -1,0 +1,19 @@
+.info-box {
+	width: 400px;
+	height: 170px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -85px;
+	margin-left: -200px;
+}
+
+.info-box-icon {
+	float: left;
+	padding: 3px 15px;
+	color: #C62828;
+}
+
+.info-box-icon i {
+	font-size: 32px;
+}
