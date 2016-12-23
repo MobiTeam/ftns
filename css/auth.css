@@ -26,19 +26,32 @@
 	margin-top: 10px;
 }
 
-.register-link-icon {
+.login-link {
+	cursor: pointer;
+}
+
+.login-link:hover {
+	color: #43A047;
+	transition: 0.3s all;
+}
+
+.login-link-icon {
 	vertical-align: top;
 }
+
 
 .register-link {
 	cursor: pointer;
 }
 
-.register-link:hover {
-	color: #004D40;
-	transition: 0.3s all;
+.register-link-icon {
+	vertical-align: top;
 }
 
+.register-link:hover {
+	color: #0091EA;
+	transition: 0.3s all;
+}
 
 .auth-form .buttons-block {
 	width: 300px;

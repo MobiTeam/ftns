@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Личный кабинет</title>
+	<title>Панель администратора</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
-	<link rel="stylesheet" type="text/css" href="css/user.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
 </head>
 	<body>
 		<div class="container main-wrapper no-padding">

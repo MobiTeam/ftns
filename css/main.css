@@ -25,6 +25,10 @@ html, body {
 	min-width: 1170px;
 }
 
+.content {
+	min-height: 500px;
+}
+
 .no-padding {
 	padding: 0px!important;
 }
