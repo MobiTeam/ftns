@@ -71,3 +71,7 @@ html, body {
 	color: #B71C1C;
 	margin: 0px 10px;
 }
+
+.custom-title {
+	margin-bottom: 22px!important;
+}

@@ -15,83 +15,87 @@
 
 			<?php require_once('dashboard/user_header.php') ?>
 
-			<div class="content">
-			
-				<div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Sheena Shrestha</h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
-                
-                <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
-                  <dl>
-                    <dt>DEPARTMENT:</dt>
-                    <dd>Administrator</dd>
-                    <dt>HIRE DATE</dt>
-                    <dd>11/12/2013</dd>
-                    <dt>DATE OF BIRTH</dt>
-                       <dd>11/12/2013</dd>
-                    <dt>GENDER</dt>
-                    <dd>Male</dd>
-                  </dl>
-                </div>-->
-                <div class=" col-md-9 col-lg-9 "> 
-                  <table class="table table-user-information">
-                    <tbody>
-                      <tr>
-                        <td>Department:</td>
-                        <td>Programming</td>
-                      </tr>
-                      <tr>
-                        <td>Hire date:</td>
-                        <td>06/23/2013</td>
-                      </tr>
-                      <tr>
-                        <td>Date of Birth</td>
-                        <td>01/24/1988</td>
-                      </tr>
-                   
-                         <tr>
-                             <tr>
-                        <td>Gender</td>
-                        <td>Female</td>
-                      </tr>
-                        <tr>
-                        <td>Home Address</td>
-                        <td>Kathmandu,Nepal</td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
-                        <td><a href="mailto:info@support.com">info@support.com</a></td>
-                      </tr>
-                        <td>Phone Number</td>
-                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                        </td>
-                           
-                      </tr>
-                     
-                    </tbody>
-                  </table>
-                  
-                  <a href="#" class="btn btn-primary">My Sales Performance</a>
-                  <a href="#" class="btn btn-primary">Team Sales Performance</a>
-                </div>
-              </div>
-            </div>
-                 <div class="panel-footer">
-                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-                        <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
-                    </div>
-            
-          </div>
+			<div class="content">                
+                <div class="panel-body">
+                    <h3 class="no-margin custom-title">Личный профиль</h3>
+                    <div class="row">
+                        <div class="cols-xs-12 col-md-3 col-lg-3">
+                            <img alt="Ваша фотография" title="Ваша фотография" src="/img/user-logo-256.png" class="img-circle img-responsive">
+                        </div>
+                        <div class=" col-md-9 col-lg-9">
+                            <table class="table table-user-information">
+                                <tr>
+                                    <td>Логин:</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>ФИО:</td>
+                                    <td>Иванов Иван Иванович</td>
+                                </tr>
+                                <tr>
+                                    <td>Пол</td>
+                                    <td>Мужской</td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон:</td>
+                                    <td>+7 999 777 123 34</td>
+                                </tr>
+                                <tr>
+                                    <td>Электронная почта:</td>
+                                    <td>user@mail.ru</td>
+                                </tr>
+                            </table>
+                            <form action="" method="POST" class="table-user-information-form" style="display: none">
+                                <table class="table">
+                                    <tr>
+                                        <td>Логин:</td>
+                                        <td>
+                                            <input type="text" name="login" value="user" class="form-control" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ФИО:</td>
+                                        <td>
+                                            <input type="text" name="fullname" value="Иванов Иван Иванович" class="form-control" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пол</td>
+                                        <td>
+                                            <select name="sex" class="form-control">
+                                                <option value="0">Женский</option>
+                                                <option value="1" selected>Мужской</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Телефон:</td>
+                                        <td>
+                                            <input type="text" name="phone" value="+7 999 777 123 34" class="form-control" />                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Электронная почта:</td>
+                                        <td>
+                                            <input type="text" name="mail" value="user@mail.ru" class="form-control" />                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button class="btn btn-success save-user-profile">
+                                                Сохранить изменения
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <a href="#" class="btn btn-primary edit-user-profile">Редактировать</a>
+                            <a href="#" class="btn btn-warning load-photo" disabled>Загрузить новую фотографию</a>                                
 
-		    
-			</div>	
+                        </div>
+                    </div>
+                </div>                                
+            </div>	
 			<div class="footer">
 				Ugra-Fit - 2016
 			</div>
