@@ -2,9 +2,14 @@
 <script>
 	$(document).ready(function() {
 		$(document)
+			.on('ready', _onDocumentReady)
 			.on('click', '.exit-link', _onExitLinkClick)
 			.on('click', '.load-photo', _onLoadPhotoClick)
 			.on('click', '.edit-user-profile', _onEditUserProfileClick);
+
+		function _onDocumentReady() {
+			
+		}
 
 		function _onExitLinkClick(event) {
 			location.href = "/auth.html";

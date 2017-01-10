@@ -95,10 +95,8 @@
                         </div>
                     </div>
                 </div>                                
-            </div>	
-			<div class="footer">
-				Ugra-Fit - 2016
-			</div>
+            </div>
+            <?php require_once('dashboard/user_footer.php') ?>			
 		</div>
     <?php require_once('dashboard/user_scripts.php') ?>
 	</body>

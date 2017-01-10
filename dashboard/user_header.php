@@ -4,7 +4,7 @@
 			UGRA-FIT
 		</div>
 		<div class="logo-block-page-title no-select">
-			Панель пользователя
+			Личный кабинет пользователя
 		</div>  
 	</div>
 	<div class="auth-user-block no-select">	
@@ -23,14 +23,16 @@
 					Главная
 				</div>	
 			</li>
-		</a>	
-		<!-- <li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE7FB;</i>	
-			<div class="horisontal-menu-ul-li-text">	
-				Пользователи
-			</div>	
-		</li>
-		<li class="horisontal-menu-ul-li">
+		</a>
+		<a href="/dashboard/user_train.php">	
+			<li class="horisontal-menu-ul-li">
+				<i class="material-icons horisontal-menu-ul-li-icon">&#xEB43;</i>
+				<div class="horisontal-menu-ul-li-text">	
+					Тренировки
+				</div>	
+			</li>
+		</a>
+		<!--<li class="horisontal-menu-ul-li">
 			<i class="material-icons horisontal-menu-ul-li-icon">&#xE922;</i>
 			<div class="horisontal-menu-ul-li-text">	
 				Программы
@@ -41,46 +43,14 @@
 			<div class="horisontal-menu-ul-li-text">	
 				Упражнения
 			</div>						
-		</li>
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE87F;</i>
-			<div class="horisontal-menu-ul-li-text">	
-				Обратная связь
-			</div>						
-		</li> -->
+		</li>-->
+		<!-- <a href="">
+			<li class="horisontal-menu-ul-li">
+				<i class="material-icons horisontal-menu-ul-li-icon">&#xE87F;</i>
+				<div class="horisontal-menu-ul-li-text">	
+					Обратная связь
+				</div>						
+			</li>
+		</a>  -->
 	</ul>
-</div>
-<div class="second-horisontal-menu" style="display:none;">
-	<!-- <ul class="horisontal-menu-ul menu-ul-dark">
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE7FE;</i>	
-			<div class="horisontal-menu-ul-li-text">	
-				Добавить
-			</div>	
-		</li>	
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE55A;</i>	
-			<div class="horisontal-menu-ul-li-text">	
-				Профиль
-			</div>	
-		</li>
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE922;</i>
-			<div class="horisontal-menu-ul-li-text">	
-				Программы
-			</div>						
-		</li>
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE566;</i>
-			<div class="horisontal-menu-ul-li-text">	
-				Упражнения
-			</div>						
-		</li>
-		<li class="horisontal-menu-ul-li">
-			<i class="material-icons horisontal-menu-ul-li-icon">&#xE87F;</i>
-			<div class="horisontal-menu-ul-li-text">	
-				Обратная связь
-			</div>						
-		</li>
-	</ul> -->
 </div>
