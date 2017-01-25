@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Панель администратора</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/user.css">
+</head>
+	<body>
+		<div class="container main-wrapper no-padding">
+			<div class="header">
+				<div class="logo-block no-select">
+					<div class="logo-block-text">
+						UGRA-FIT
+					</div>
+					<div class="logo-block-page-title no-select">
+						Панель администратора
+					</div>  
+				</div>
+				<div class="auth-user-block no-select">	
+					Здравствуйте, Администратор
+					<div class="exit-link">
+						<i class="material-icons exit-link-icon">&#xE879;</i> Выйти
+					</div>
+				</div>
+			</div>
+			<div class="horisontal-menu no-select">
+				<ul class="horisontal-menu-ul">
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE88A;</i>	
+						<div class="horisontal-menu-ul-li-text">	
+							Главная
+						</div>	
+					</li>	
+					<li class="horisontal-menu-ul-li active_item">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE7FB;</i>	
+						<div class="horisontal-menu-ul-li-text">	
+							Пользователи
+						</div>	
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE922;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Программы
+						</div>						
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE566;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Упражнения
+						</div>						
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE87F;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Обратная связь
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="second-horisontal-menu">
+				<ul class="horisontal-menu-ul menu-ul-dark">
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE7FC;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Список
+						</div>						
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE7FE;</i>	
+						<div class="horisontal-menu-ul-li-text">	
+							Создать
+						</div>	
+					</li>	
+					<!-- <li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE55A;</i>	
+						<div class="horisontal-menu-ul-li-text">	
+							Профиль
+						</div>	
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE566;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Упражнения
+						</div>						
+					</li>
+					<li class="horisontal-menu-ul-li">
+						<i class="material-icons horisontal-menu-ul-li-icon">&#xE87F;</i>
+						<div class="horisontal-menu-ul-li-text">	
+							Обратная связь
+						</div>						
+					</li> -->
+				</ul>
+			</div>
+			<div class="content">
+			
+			<div class='panel panel-primary dialog-panel'>
+      <div class='panel-heading'>
+        <h5>Almaguin Campground - Reservation</h5>
+      </div>
+      <div class='panel-body'>
+        <form class='form-horizontal' role='form'>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_accomodation'>Accomodation</label>
+            <div class='col-md-2'>
+              <select class='form-control' id='id_accomodation'>
+                <option>RV</option>
+                <option>Tent</option>
+                <option>Cabin/Lodging</option>
+              </select>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Name</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_title'>
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                    <option>Dr</option>
+                  </select>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name' placeholder='First Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name' placeholder='Last Name' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_adults'>Guests</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <input class='form-control col-md-8' id='id_adults' placeholder='18+ years' type='number'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_children' placeholder='2-17 years' type='number'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_children_free' placeholder='&lt; 2 years' type='number'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_email'>Contact</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_email' placeholder='E-mail' type='text'>
+                </div>
+              </div>
+              <div class='form-group internal'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_phone' placeholder='Phone: (xxx) - xxx xxxx' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_checkin'>Checkin</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_checkin'>
+                  <span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+                </div>
+              </div>
+              <label class='control-label col-md-2' for='id_checkout'>Checkout</label>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_checkout'>
+                  <span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_equipment'>Equipment type</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_equipment'>
+                    <option>Travel trailer</option>
+                    <option>Fifth wheel</option>
+                    <option>RV/Motorhome</option>
+                    <option>Tent trailer</option>
+                    <option>Pickup camper</option>
+                    <option>Camper van</option>
+                  </select>
+                </div>
+              </div>
+              <div class='col-md-9'>
+                <div class='form-group internal'>
+                  <label class='control-label col-md-3' for='id_slide'>Slide-outs</label>
+                  <div class='make-switch' data-off-label='NO' data-on-label='YES' id='id_slide_switch'>
+                    <input id='id_slide' type='checkbox' value='chk_hydro'>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_service'>Required Service</label>
+            <div class='col-md-8'>
+              <select class='multiselect' id='id_service' multiple='multiple'>
+                <option value='hydro'>Hydro</option>
+                <option value='water'>Water</option>
+                <option value='sewer'>Sewer</option>
+              </select>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_pets'>Pets</label>
+            <div class='col-md-8'>
+              <div class='make-switch' data-off-label='NO' data-on-label='YES' id='id_pets_switch'>
+                <input id='id_pets' type='checkbox' value='chk_hydro'>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_comments'>Comments</label>
+            <div class='col-md-6'>
+              <textarea class='form-control' id='id_comments' placeholder='Additional comments' rows='3'></textarea>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-offset-4 col-md-3'>
+              <button class='btn-lg btn-primary' type='submit'>Request Reservation</button>
+            </div>
+            <div class='col-md-3'>
+              <button class='btn-lg btn-danger' style='float:right' type='submit'>Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+		    
+			</div>	
+			<div class="footer">
+				Ugra-Fit - 2016
+			</div>
+		</div>
+	</body>
+</html>

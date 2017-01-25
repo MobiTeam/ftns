@@ -1,0 +1,133 @@
+.left-sidebar {
+	background: #0e1a35;
+	height: 100%;
+	padding: 0px;
+}
+
+.content {
+	height: 100%;
+}
+
+.container-fluid {
+	height: 100%;
+	background: #f6f5fa;
+	position: relative;
+}
+
+.hidden-xs {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navi a {
+    border-bottom: 1px solid #0d172e;
+    border-top: 1px solid #0d172e;
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 28px 20px;
+    text-decoration: none;
+}
+
+.navi i {
+    margin-right: 15px;
+    color: #5584ff;
+}
+
+.navi .active a {
+    background: #122143;
+    border-left: 5px solid #5584ff;
+    padding-left: 15px;
+}
+
+.navi a:hover {
+    background: #122143 none repeat scroll 0 0;
+    border-left: 5px solid #5584ff;
+    display: block;
+    padding-left: 15px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo a, .logo a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logo-text {
+	font-family: 'Maxwell-Regular';
+	color: #ff7932;
+	font-size: 36px;
+}
+
+.logo img {
+    padding: 10px 0 0px;
+    width: 20%;
+}
+
+.circle-logo {
+    margin: 0 auto;
+    max-width: 30px !important;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.logo img {
+    	padding: 10px 0 10px;
+   	 	width: 48%;
+	}
+}
+
+.navbar {
+	height: 70px;
+	margin-bottom: 0px;
+	background: white;
+}
+
+.user-dashboard {
+	padding: 0 20px;
+}
+
+.user-dashboard h2 {
+    color: #0e1a35;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 21px 0;
+}
+
+.sales {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #d4d9e3;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+.sales h3 {
+    color: #8492af;
+    float: left;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+    padding: 9px 0 0;
+}
+
+.sales button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #dadee7;
+    border-radius: 100px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding-right: 32px;
+    color: #0e1a35;
+}
+
+.sales .btn-group {
+    float: right;
+}

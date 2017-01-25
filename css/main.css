@@ -1,77 +1,42 @@
 * {
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 }
 
 html, body {
-	min-height: 100%;
-	/*height: 100%;*/
-	background: #ebeff2;
-}
-
-@font-face {
-	font-family: 'Gputeks-Regular'; 
-	src: url(../fonts/Gputeks-Regular.ttf); 
-}
-
-@font-face {
-	font-family: 'Gputeks-Bold'; 
-	src: url(../fonts/Gputeks-Bold.ttf); 
-}
-
-.main-wrapper {
-	background: white;
+	background: #f6f5fa;
 	height: 100%;
-	min-width: 1170px;
 }
 
-.content {
-	min-height: 500px;
+.display-table {
+	display: table;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.no-padding {
-	padding: 0px!important;
+.display-table-row {
+    display: table-row;
+    height: 100%;
 }
 
-.no-margin {
-	margin: 0px!important;
+.display-table-cell {
+	display: table-cell;
+    float: none;
+    height: 100%;
+} 
+
+.v-align {
+	vertical-align: top;
 }
 
-.no-select {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Chrome/Safari/Opera */
-     -khtml-user-select: none; /* Konqueror */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  not supported by any browser */
+@font-face {
+	font-family: 'Maxwell-Regular';
+	src:url('../fonts/MAXWELL-REGULAR.ttf');
 }
 
-.row {
-	margin: 0px!important;
-}
-
-.footer {
-	text-align: center;
-	height: 100px;
-	padding: 40px;
-	background: rgba(125, 125, 125, 0.2);
-}
-
-.material-icons {
-	cursor: pointer;
-}
-
-.edit-icon-btn {
-	color: #01579B;
-	margin: 0px 10px;
-}
-
-.delete-icon-btn {
-	color: #B71C1C;
-	margin: 0px 10px;
-}
-
-.custom-title {
-	margin-bottom: 22px!important;
+.logo-text {
+	font-family: 'Maxwell-Regular';
+	color: #ff7932;
+	font-size: 36px;
 }

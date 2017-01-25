@@ -1,0 +1,63 @@
+.auth-box {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+
+.auth-box .auth-user-block, .auth-box .logo-block {
+	float: none;
+	padding: 0px;
+}
+
+.auth-box .logo-block {
+	border-bottom: 1px solid grey;
+	padding: 8px;
+}
+
+.auth-box .auth-user-block {
+	padding: 8px;
+}
+
+.auth-form {
+	margin-top: 10px;
+}
+
+.login-link {
+	cursor: pointer;
+}
+
+.login-link:hover {
+	color: #43A047;
+	transition: 0.3s all;
+}
+
+.login-link-icon {
+	vertical-align: top;
+}
+
+
+.register-link {
+	cursor: pointer;
+}
+
+.register-link-icon {
+	vertical-align: top;
+}
+
+.register-link:hover {
+	color: #0091EA;
+	transition: 0.3s all;
+}
+
+.auth-form .buttons-block {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.register-form {
+	margin-top: 10px;
+}

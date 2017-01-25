@@ -1,0 +1,89 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body {
+	min-height: 100%;
+	background: #ebeff2;
+}
+
+@font-face {
+	font-family: 'Gputeks-Regular'; 
+	src: url(../fonts/Gputeks-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'Gputeks-Bold'; 
+	src: url(../fonts/Gputeks-Bold.ttf); 
+}
+
+.main-wrapper {
+	background: white;
+	height: 100%;
+	min-width: 1170px;
+}
+
+.content {
+	min-height: 500px;
+}
+
+.no-padding {
+	padding: 0px!important;
+}
+
+.no-margin {
+	margin: 0px!important;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.row {
+	margin: 0px!important;
+}
+
+.footer {
+	text-align: center;
+	height: 100px;
+	padding: 40px;
+	font-size: 20px;
+	background: rgba(125, 125, 125, 0.2);
+	font-family: 'Gputeks-Regular'; 
+}
+
+.material-icons {
+	cursor: pointer;
+}
+
+.edit-icon-btn {
+	color: #01579B;
+	margin: 0px 10px;
+}
+
+.delete-icon-btn {
+	color: #B71C1C;
+	margin: 0px 10px;
+}
+
+.custom-title {
+	margin-bottom: 22px!important;
+}
+
+.user-icon-block {
+	position: absolute;
+	right: 6px;
+	bottom: -26px;
+}
+
+.user-icon-block i {
+	font-size: 70px;
+	opacity: 0.9;
+}

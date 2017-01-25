@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Панель администратора</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/auth.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+	<body>
+		<div class="auth-box">
+			<div class="logo-block no-select">
+				<div class="logo-block-text">
+					UGRA-FIT
+				</div>
+				<div class="logo-block-page-title no-select">
+					Вход в личный кабинет
+				</div>  
+			</div>
+			<div class="auth-user-block no-select">
+				<div class="auth-block">
+					Здравствуйте, для входа в систему необходимо ввести логин и пароль
+					<form class="auth-form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="login" placeholder="Логин" />
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" name="password" placeholder="Пароль" />
+						</div>
+						<div class="login-helper alert alert-danger small" style="display: none">
+							Пользователя с данным логином не существует.
+						</div>
+						<div class="form-group buttons-block">
+							<div class="login-link" style="float: left">
+								<i class="material-icons login-link-icon">&#xE879;</i> Войти
+							</div>
+							<div class="register-link" style="float: right">
+								<i class="material-icons register-link-icon">&#xE7FE;</i> Зарегистрироваться
+							</div>
+						</div>
+						<div style="clear:both"></div>
+					</form>				
+				</div>
+				<div class="register-block" style="display: none">
+					Для регистрации в системе введите свой адрес электронной почты
+					<form class="register-form">
+						<div class="form-group">
+							<div class="input-group">
+							  <input type="text" class="form-control" data-helper-class="email-helper" name="email" placeholder="email">
+							  <div class="input-group-btn">
+							    <input type="submit" class="btn btn-success" value="Зарегистрироваться" class="form-control"/>
+							  </div>
+							</div>
+						</div>
+					</form>
+					<div class="email-helper alert alert-info small" style="display: none">
+						На данный адрес будет отправлено письмо с дальнейшими инструкциями
+					</div>
+					<a href="#" class="auth-back-link">
+						<i class="material-icons" style="vertical-align: top;">&#xE5C4;</i>
+						Назад, к форме авторизации
+					</a>					
+				</div>				
+			</div>
+			<div style="clear:both"></div>	
+		</div>		
+	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document)
+				.on('focus', '[data-helper-class]', _onDataHelperFocus)
+				.on('click', '.login-link', _onLoginLinkClick)
+				.on('input', '[name="login"]', _onLoginInput)
+				.on('click', '.register-link, .auth-back-link', _toggleAuthFormTabs);
+
+			function _toggleAuthFormTabs(event) {
+				event.preventDefault();
+				$('.auth-block').toggle(0);
+				$('.register-block').toggle(0);
+			}
+
+			function _onDataHelperFocus(event) {
+				var $tg = $(this);
+				$('.' + $tg.attr('data-helper-class')).stop().fadeIn(160);
+			}
+
+			function _onLoginInput(event) {
+				$('.login-helper').fadeOut(50);				
+			}
+
+			function _onLoginLinkClick(event) {
+				$('.login-helper').fadeOut(0);
+				switch($('[name="login"]').val()) {
+					case 'user':
+						location.href = "dashboard/user.php";
+					break;
+					case 'admin':
+						location.href = "dashboard/admin.php";
+					break;
+					case 'manager':
+						location.href = "dashboard/manager.php";
+					break;
+					default:
+						$('.login-helper').fadeIn(50);
+					break;
+				}
+			}
+
+		})
+	</script>
+</html>
