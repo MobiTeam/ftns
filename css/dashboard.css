@@ -83,10 +83,57 @@
 	}
 }
 
+.header-top li {
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
+
+.header-top li i {
+    color: #0e1a35;
+}
+
+.header-top li i:hover {
+    color: #1d3a7d;
+}
+
+.icon-info {
+    position: relative;
+}
+
 .navbar {
 	height: 70px;
 	margin-bottom: 0px;
 	background: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    margin: -3px 2px;
+}
+
+.navbar a:hover, .navbar a:focus {
+    text-decoration: none;
+}
+
+.icon-info .label {
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.label.label-primary {
+    border-radius: 50%;
+    font-size: 9px;
+    left: 8px;
+    position: absolute;
+    top: -9px;
 }
 
 .user-dashboard {

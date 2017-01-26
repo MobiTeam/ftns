@@ -1,63 +1,197 @@
-.auth-box {
-	width: 400px;
-	height: 400px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-top: -200px;
-	margin-left: -200px;
+.text-box {
+	margin: 36px 0px;
 }
 
-.auth-box .auth-user-block, .auth-box .logo-block {
-	float: none;
-	padding: 0px;
+.atention-box {
+	text-align: center;
 }
 
-.auth-box .logo-block {
-	border-bottom: 1px solid grey;
-	padding: 8px;
+.logo-image {
+	width: 80px;
 }
 
-.auth-box .auth-user-block {
-	padding: 8px;
+.company-slogan {
+	text-align: center;
 }
 
-.auth-form {
-	margin-top: 10px;
+.company-text {
+	font-size: 26px;
+	font-family: Arial, Sans-serif;
+	color: #ff7932;
+	max-width: 370px;
+	margin-bottom: 10px;
+	display: inline-block;
 }
 
-.login-link {
-	cursor: pointer;
+.company-logo {
+	font-family: 'Maxwell-Regular';
+	color: #ff7932;
+	font-size: 80px;
+	margin-top: -20px;
+    display: block;
 }
 
-.login-link:hover {
-	color: #43A047;
-	transition: 0.3s all;
+.container {
+	padding-top: 30px;
+	max-width: 1000px!important;
 }
 
-.login-link-icon {
-	vertical-align: top;
+.info-text {
+	background: #ffffff none repeat scroll 0 0;
+    border: 4px solid #d4d9e3;
+    display: inline-block;
+    padding: 28px 30px 28px 50px;
 }
 
-
-.register-link {
-	cursor: pointer;
+.info-text h4 {
+	margin-top: 0px;
 }
 
-.register-link-icon {
-	vertical-align: top;
-}
-
-.register-link:hover {
-	color: #0091EA;
-	transition: 0.3s all;
-}
-
-.auth-form .buttons-block {
-	width: 300px;
+#list-items {
+	list-style:none;
+	counter-reset:li;
+	padding:8px 0px 1px;
+	left:-7px;
 	margin: 0 auto;
 }
 
-.register-form {
-	margin-top: 10px;
+#list-items li {
+	position: relative;
+	padding: 3px 2px 0 17px;
+	left: -5px;
+
+}
+
+#list-items li {
+	background: #eee;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: .4em .2em .4em 2em;
+	margin: .5em 0;
+	background: #ddd;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: all .3s ease-out;   
+}
+
+#list-items li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute; 
+	top: 62%;
+	margin: -1.3em;
+	height: 2em;
+	width: 2em;
+	line-height: 1.68em;
+	font-size: 18px;
+	color: #fff; /* text color of numbers */
+	background: #FB8835; /* background color of numbers */
+	border: .2em solid #fff; /* border color */
+	-webkit-box-shadow: 0 8px 5px -7px #888;
+	-moz-box-shadow: 0 8px 5px -7px #888;
+	box-shadow: 0 8px 5px -7px #888;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	position: absolute;   
+	left: 0;
+	transition: all .3s ease-out;
+}
+
+#list-items li:hover {
+	background: #eee;
+}
+
+#list-items li:hover:before {
+	transform: rotate(360deg);   
+}
+
+#list-items li a{
+	font: 14px Georgia, serif; /* font size of post titles */
+	text-shadow: 0 -1px 2px #fff;
+	color: #444;
+	display:block;
+	min-height:25px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+#list-items li a:hover {
+	color: #444;
+}
+
+.btn-box {
+	padding: 20px 8px;
+	
+}
+
+.register-btn, .login-btn {
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 6px;
+}
+
+@media only screen and (max-width : 480px) {
+	.register-btn, .login-btn {
+		display: inline-block;
+		font-size: 20px;
+		width: 100%;
+		margin: 10px 6px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.company-slogan {
+	    margin-top: 30px;
+	}
+}
+
+.cond-block h2, .descr-block h2 {
+	margin: 0px 16px 26px 16px;
+}
+
+.cond-block p {
+	text-align: left;
+	text-indent: 14px;
+}
+
+.footer {
+	text-align: center;
+	padding: 0px 0px 16px 0px;
+}
+
+.for-clients, .for-trainers {
+	text-align: center;
+}
+
+a.site-link, a.site-link:hover, a.site-link:active, a.site-link:visited {
+	color: #ff7932;
+}
+
+.navbar {
+	width: 100%;
+	height: 56px;
+	margin: 0px;
+	color: white;
+	background: #e77e23;
+	position: fixed;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 5px 23px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 23px -9px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 23px -9px rgba(0,0,0,0.75);
+}
+
+.menu-button {
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	padding: 8px 16px;
+    height: 55px;
+}
+
+.menu-button:active {
+	background: #d55401;
 }
