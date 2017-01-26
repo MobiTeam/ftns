@@ -123,14 +123,17 @@
 }
 
 .btn-box {
-	padding: 20px 8px;
-	
+	padding: 20px 8px;	
 }
 
 .register-btn, .login-btn {
 	display: inline-block;
 	font-size: 16px;
 	margin: 4px 6px;
+}
+
+.register-btn i, .login-btn i {
+	margin-right: 5px;
 }
 
 @media only screen and (max-width : 480px) {
